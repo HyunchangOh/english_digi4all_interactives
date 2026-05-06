@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Aktienspiel</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+		.btn-small {
+			width: 120px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="row" style="width:90%;">
+		<canvas id="canvas"></canvas>
+	</div>
+	<div class="row" style="margin-left:1em;">
+			<div class="col s2">Geld: <span id="money">1000</span></div>
+			<div class="col s2">Aktien rot: <span id="shares-red">0</span></div>
+			<div class="col s2">Aktien blau: <span id="shares-blue">0</span></div>
+			<div class="col s2">Aktien grün: <span id="shares-green">0</span></div>
+			<div class="col s2">Aktien orange: <span id="shares-orange">0</span></div>
+			<div class="col s2">Aktien Wert: <span id="shares-value">0</span></div>
+
+	</div>
+	<br>
+	<br>
+	<div class="row" style="margin-left:1em">
+		<div class="col s2"></div>
+		<div class="col s8">
+			<button class="btn-small black" id="start">Los gehts!</button>
+			<button class="btn-small red" id="buyRed">Kaufe</button>
+			<button class="btn-small red" id="sellRed">Verkaufe</button>
+			<button class="btn-small blue" id="buyBlue">Kaufe</button>
+			<button class="btn-small blue" id="sellBlue">Verkaufe</button>
+			<button class="btn-small" id="buyGreen">Kaufe</button>
+			<button class="btn-small" id="sellGreen">Verkaufe</button>
+			<button class="btn-small orange" id="buyOrange">Kaufe</button>
+			<button class="btn-small orange" id="sellOrange">Verkaufe</button>
+		</div>
+		<div class="col s2"></div>
+	</div>
+	<script src="js/aktien.js">	</script>
+</body>
+
+</html>
