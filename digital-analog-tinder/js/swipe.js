@@ -54,7 +54,7 @@ $(document).ready(function () {
 
     $(this).append('<div class="status like">Analog!</div>');
     if ($(this).is(":last-child")) {
-      $("#container").html('<div class="message>Ende</div>');
+      $("#container").html('<div class="message">End</div>');
     } else {
       $(this).next().removeClass("rotate-left rotate-right").fadeIn(400);
     }
