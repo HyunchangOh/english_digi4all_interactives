@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Digitalisierung</title>
+	<title>Digitalization</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
@@ -27,7 +27,7 @@
 	<div class="container">
     <canvas id="canvas" width="512" height="512"> </canvas>
         <div class="row">
-            <div class="col s2">Zeitdiskretisierung:</div>
+            <div class="col s2">Time discretization:</div>
             <!-- TODO change to slider -->
             <div class="col s10">
                 <button id="eval-btn-z-512" class="btn-small clicked" onclick="zeit(512)">512</button>
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col s2">Wertdiskretisierung:</div>
+            <div class="col s2">Value discretization:</div>
             <div class="col s10">
                 <button id="eval-btn-w-256" class="btn-small clicked" onclick="wert(256)">16,7 Mio.</button>
                 <button id="eval-btn-w-128" class="btn-small" onclick="wert(128)">2 Mio.</button>
@@ -95,7 +95,7 @@
         function updateCompressedSize() {
                     const size = calculateCompressedSize(zeitD, wertTomValues[wertD]);
                     if (size > 1024){
-                    document.getElementById('compressed-size').innerText = `Geschätzte Größe: ${Math.round(size / 1024)} KB`;
+                    document.getElementById('compressed-size').innerText = `Estimated size: ${Math.round(size / 1024)} KB`;
                     }
                     else{
                         document.getElementById('compressed-size').innerText = `Geschätzte Größe: ${Math.round(size)} B`;
