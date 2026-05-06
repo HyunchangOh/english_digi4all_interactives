@@ -188,9 +188,9 @@ function updateDotCount() {
 
     var dotText = $('#dot-decimal-count');
     if (dotCount == 1) {
-        dotText.html('1 Punkt ist zu sehen');
+        dotText.html('1 dot is visible');
     } else {
-        dotText.html(dotCount + ' Punkte sind zu sehen');
+        dotText.html(dotCount + ' dots are visible');
     }
 };
 
