@@ -34,10 +34,10 @@ $(document).ready(function () {
     $('button#show-binary').on('click', function(){
         visible = !visible;
         if (visible){
-            $('button#show-binary').text('Verstecke Binärdarstellung');
+            $('button#show-binary').text('Hide Binary Representation');
         }
         else {
-            $('button#show-binary').text('Zeige Binärdarstellung');
+            $('button#show-binary').text('Show Binary Representation');
         }
         updateBinary();
     });
