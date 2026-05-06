@@ -219,10 +219,10 @@ function updateBinary(){
         binaryValue.shift();
     }
     if (binaryValue.length == 0) {
-        binary.html('0 lautet die Binärdarstellung der Zahl');
+        binary.html('0 is the binary representation of the number');
     }
     else {
-        binary.html(binaryValue.join(' ') + ' lautet die Binärdarstellung der Zahl');
+        binary.html(binaryValue.join(' ') + ' is the binary representation of the number');
     }
     
 };
