@@ -9,9 +9,9 @@ $(document).ready(function () {
   ColourMatcher.representations = [24, 8];
   ColourMatcher.goal_panels = $('.interactive-colour-matcher-goal');
   ColourMatcher.help_stage = 0;
-  ColourMatcher.help_text = [['Hilf mir 24 bit Rot zu setzen', 'red'],
-                             ['Hilf mir 24 bit Grün zu setzen', 'green'],
-                             ['Mehr Hilfe gibt es nicht :)', 'disabled']]
+  ColourMatcher.help_text = [['Help me set the 24 bit Red', 'red'],
+                             ['Help me set the 24 bit Green', 'green'],
+                             ['No more help :)', 'disabled']]
   ColourMatcher.display_hexidecimal = false;
 
   // Display hexidecimal values
